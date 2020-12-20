@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_red"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/location_pin"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_gravity="left"
+        android:layout_below="@id/location">
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_below="@id/location"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:text="User name "
+            android:textAllCaps="true"
+            android:textColor="@color/yellow"
+            />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_below="@id/location"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:hint="rahula@gmail.com"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textColor="@color/yellow"
+            android:textAllCaps="true"
+            android:text="Password"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_below="@id/location"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:hint="••••••••"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="end"
+        android:padding="8dp"
+        android:text="Forget Password ?"
+        android:textColor="@color/yellow"/>
+
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Log In"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/yellow"/>
+
+    <TextView
+        android:id="@+id/on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="ON"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        >
+        <Button
+            android:id="@+id/facebook"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Facebook"
+            android:textColor="@color/blue"
+            android:textSize="12dp"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/facebook"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_shape1"/>
+
+        <Button
+            android:id="@+id/google_plus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_shape1"
+            android:drawableStart="@drawable/google_plus"
+            android:padding="10dp"
+            android:text="Google+"
+            android:textSize="12dp"
+
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+</LinearLayout>

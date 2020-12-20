@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/location_pin"/>
+    <Button
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:padding="10dp"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="10dp"
+        android:hint="phone number"
+        android:gravity="left"
+        android:textColorHint="@color/red"
+        android:layout_alignStart="@id/location"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_shape1"/>
+
+    <Button
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_number"
+        android:padding="10dp"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:hint="password"
+        android:gravity="left"
+        android:textColorHint="@color/red"
+        android:layout_alignStart="@id/location"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_shape1"/>
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="@color/red"
+        android:text="Remember Me"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/darkGrey"
+        android:buttonTint="@color/red"
+        android:layout_below="@id/password"
+        android:layout_alignStart="@id/password"
+        />
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:gravity="end"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/password"
+        android:layout_alignEnd="@id/password"
+        android:layout_height="wrap_content"
+        android:text="Forget Password ?"
+        />
+    <Button
+        android:id="@+id/log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox"
+        android:padding="10dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_alignStart="@id/location"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/red"
+        />
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_in"
+        android:padding="10dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:layout_alignStart="@id/location"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/white"/>
+
+</RelativeLayout>
